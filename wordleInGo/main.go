@@ -136,7 +136,7 @@ func revealWord(wordUrl string) {
 	finalFeedback := strings.Repeat("2", wordlePreferences.Length)
 
 	// Storing the current feedback for comparison
-	currentFeedback := (strings.Repeat("0", wordlePreferences.Length))
+	currentFeedback := strings.Repeat("0", wordlePreferences.Length)
 
 	// Charset of the accepted characters
 	charset := getCharset(wordlePreferences)
@@ -204,4 +204,3 @@ func main() {
 		panic(err)
 	}
 }
-
